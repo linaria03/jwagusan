@@ -1,28 +1,23 @@
 // 💛nav탭
 $(".tabButton").hover(function () {
-  $(this).addClass("on").children('.tabBox').stop(true).slideToggle(300);
-  $(".tabButton").not(this).stop(true).children('.tabBox').slideUp(300);
+  $(this).toggleClass("on").children('.tabBox').stop(true).slideToggle(300);
+  $(".tabButton").not(this).removeClass('on').stop(true).children('.tabBox').slideUp(300);
+  // return false;
 });
 
+
 // 💛전체메뉴
-$(".nav div:last-child > button:last-child").on("click", function () {
-  $(".gnb").stop(true).slideToglle(300).animate({
-    top : '100px'},1000, 'easeOutCirc'); 
-  });
+
+  $(".menu").click(function() {
+    $(".gnb").toggleClass("all");
+    $(".tabBox").slideToggle();
+    $(this).text(function(e, text) {
+        return text === 'close' ? 'menu' : 'close'
+    });
+});
 
 
-// $(".tabButton a").on("click", function () {
-//   $(this).next().stop(true).slideToggle(300);
-//   $(".tabButton a").not(this).next().slideUp(300);
-//   return false;
-// });
 
-// $(".material-icons").click(function () {
-//     $(this).text(function (e, text) {
-//         return text === 'close' ? 'menu_open' : 'close';
-//     });
-//     $(".gnb > ul").toggleClass('on');
-// })
 // 💛main슬라이드
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
