@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* top */
+.top > div a{
+    display: none;
+}
+header .inner .top{
+    justify-content: flex-start;
+}
+/* nav */
+nav div:last-child > button:first-child{
+    display: none;
+}
+/* sec1 */
+.sec1 .swiper-slide a{
+    padding: 8px 20px;
+    font-weight: bold;
+}
+/* sec2 */
+.sec2 .inner{
+    flex-direction: column;
+    /* background: white; */
+}
+/* sec2 공지사항 */
+.sec2 .left{
+    width: 100%;
+    order: 1;
+    height: 328px;
+    /* background: #F8F8F8; */
+}
+.sec2 .eventHeader{
+    background: url(/linaria03/ex/images/Readmore-icon.png) no-repeat 100% 50% / 35px 35px;
+}
+/* sec2 프로그램소개 */
+.sec2 .right{
+    width: 100%;
+    order: 2;
+    align-items: flex-start;
+    /* background: white; */
+}
+.programSwiper{
+    height: 285px;
+}
+.swiper-button-next,.swiper-button-prev{
+    color: black;
+    display: block;
+}
+
+/* sec3 */
+.sec3 .inner{
+    flex-direction: column;
+}
+/* sec3 찾아오시는길 */
+.sec3 .left{
+    width: 100%;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+.map iframe{
+    padding: 8px 0 0 12px;
+}
+/* sec3 여행정보 */
+.sec3 .right{
+    width: 100%;
+    align-items: flex-start;
+}
+.tripSwiper{
+    width: 95%;
+}
+.tripSwiper .swiper-slide p{
+    padding-bottom: 10px;
+}
+/* footer */
+.site{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+footer .site{
+    padding: 10px 9px;
+}
+footer .info div{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.81rem;
+    gap: 10px;
+    text-align: center;
+}
+footer .info p{
+    text-align: center;
+}
