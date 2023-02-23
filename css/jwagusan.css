@@ -80,18 +80,19 @@ nav ul.gnb {
     border-radius: 10px;
     position: relative;
 }
+
 nav ul.gnb li.tabButton ul.tabBox {
     font-size: 1.06rem;
     display: flex;
     flex-direction: column;
     gap: 8px;
     text-align: center;
-    /* border-top: 2px solid #7A7A6E; */
-    /* padding: 30px 0 0 0; */
+    width: 140px;
+    height: 380px;
     position: absolute;
     top: 40PX;
-    background: #FAFAE1;
 }
+
 .nav ul.gnb > li > ul > li ul li {
     /* font-size: 0.625rem; */
     font-size: 0.75rem;
@@ -140,12 +141,17 @@ nav div:last-child {
     background: #FAFAE1;
     /* display: flex; */
     padding: 10px;
+    width: 140px;
     /* height: 400px; */
 }
 .tabButton.on .tabBox{
     padding: 10px;
     border-radius: 15px;
-    height: 400px;
+    background: #FAFAE1;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 140px;
+    height: 380px;
 }
 .gnb.all{
     background: #FAFAE1;
@@ -154,7 +160,8 @@ nav div:last-child {
 }
 .gnb.all .tabButton{
     border-radius: 15px;
-    height: 400px;
+    background: #FAFAE1;
+    height: 480px;
 
 }
 .gnb.all .tabButton a{
