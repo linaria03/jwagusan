@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트 noto sans korean */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+/* fontawesome 아이콘 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+    /* outline: 1px solid lightblue; */
+}
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    position: sticky;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+/* top메뉴 css */
+header .inner .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 19px;
+    /* gap: 633px; */
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.5);
+}
+.inner a.logo {
+    background: url(/ex/images/House-icon.png) no-repeat 0 50% / 50px 50px;
+    font-size: 1.31rem;
+    font-weight: 400;
+    padding: 20px 14px 5px 58px;
+    overflow: hidden;
+}
+.inner .top div:last-child {
+    gap: 24px;
+    display: flex;
+}
+/* nav */
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    align-items: center;
+    padding: 10px 0;
+}
+nav ul.gnb {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    align-items: center;
+}
+.nav ul.gnb li.tabButton {
+    padding: 10px;
+    font-size: 1.06rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    position: relative;
+}
+nav ul.gnb li.tabButton ul.tabBox {
+    font-size: 1.06rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    width: 140px;
+    height: 380px;
+    position: absolute;
+    top: 40PX;
+}
+.nav ul.gnb > li > ul > li ul li {
+    font-size: 0.75rem;
+    padding: 2px 0 5px 0;
+}
+.nav ul.gnb > li > ul > li ul li::before {
+    content: "\f111";
+    font-size: 0.25rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding: 0 3px 0 0;
+}
+.nav ul.gnb ul.tabBox {
+    width: 100%;
+    display: none;
+}
+nav button {
+    background: #53A0F8;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    color: #FFFFFFD4;
+}
+nav div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.fa-solid {
+    font-size: 30px;
+}
+
+/* 전체메뉴 */
+.gnb {
+    width: 100%;
+    height: 100%;
+}
+.tabButton.on {
+    /* width: 50%; */
+    background: #FAFAE1;
+    /* display: flex; */
+    padding: 10px;
+    width: 140px;
+    /* height: 400px; */
+}
+.tabButton.on .tabBox{
+    padding: 10px;
+    border-radius: 15px;
+    background: #FAFAE1;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 140px;
+    height: 380px;
+}
+.gnb.all{
+    background: #FAFAE1;
+    border-radius: 15px;
+    padding: 0 34px;
+}
+.gnb.all .tabButton{
+    border-radius: 15px;
+    background: #FAFAE1;
+    height: 480px;
+
+}
+.gnb.all .tabButton a{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.menu {
+    font-size: 2.375rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+/* 지도 */
+.map{
+    width: 100%;
+    height: 500px;
+    background: #F2EDE4;
+}
+/* 주변볼거리 */
+.sec1 h2{
+    font-size: 2.5rem;
+    color: #1B2603;
+    padding: 30px 0 10px 0;
+    border-bottom: 1px solid #1B2603;
+}
+
+/* 산책코스 */
+.walk{
+    background: url(/ex/images/산책코스logo.gif) no-repeat 0 0 / 200px 200px;
+}
+.car{
+    background: url(/ex/images/관광코스.gif) no-repeat 0 0 /200px 200px;
+}
+.contain{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 29px;
+}
+.sec1 h3{
+    font-size: 2.2rem;
+    color: #2D4003;
+    padding: 117px 0px 26px 150px;
+}
+.content{
+    width: 280px;
+    height: 420px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 17px;
+    box-shadow: 1px 4px 7px 3px rgba(9, 13, 4, 0.25);
+    /* border: 1px solid #333333; */
+    /* margin: 10px; */
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.content p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #090D04;
+}
+.content span{
+    font-size: 0.85rem;
+    color: #090D04;
+    padding: 0 5px;
+}
+.content a{
+    padding: 16px 0px;
+    background: #2D4003;
+    color: white;
+    border-radius: 0 0 15px 15px;
+}
+.content img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* footer */
+footer {
+    background: #F2EDE4;
+    color: #B3AFA8;
+    margin-top: 30px;
+    padding: 0 0 50px 0;
+}
+footer .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+footer .site {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 9px;
+    font-size: 1.25rem;
+}
+footer .site select {
+    /* border: none; */
+    background: #F2EDE4;
+    /* background: #73706C; */
+    border: 1px solid rgba(87, 87, 87, 0.5);
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 1rem;
+    color: #B3AFA8;
+}
+footer .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+}
+footer .info div {
+    display: flex;
+    gap: 30px;
+}
