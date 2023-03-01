@@ -26,7 +26,7 @@ a {
 }
 header {
     width: 100%;
-    position: sticky;
+    /* position: sticky; */
     background: white;
     top: 0;
     left: 0;
@@ -237,18 +237,25 @@ nav div:last-child {
     /* flex-direction: column; */
     padding-top: 20px;
 }
-.room > a {
+.roomImg{
+    width: 400px;
+    height: 400px;
+    background: url(/images/sub_booking/좌구산-4인실.png) no-repeat 0 0;
+    position: relative;
+}
+.roomImg > a {
     display: flex;
     justify-content: center;
-    padding: 10px 50px;
+    padding: 5px 20px;
     background: #A69180;
     color: #F2E5D5;
     position: absolute;
-    bottom: 7px;
-    left: 19%;
+    bottom: 4%;
+    left: 50%;
     transform: translate(-50%, 0);
     border-radius: 19px;
     font-size: 1.25rem;
+    
 }
 .detail{
     display: flex;
@@ -264,8 +271,10 @@ nav div:last-child {
     text-align: center;
     font-size: 1.75rem;
     border-radius: 7px;
+    margin-top: 70px;
 }
 .detail h3{
     border-bottom: 1px solid #0D0D0D;
-    padding-bottom: 5px;
+    padding: 20px 0 5px 0;
+    font-size: 1.85rem;
 }

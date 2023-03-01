@@ -11,20 +11,25 @@
     line-height: 1.2;
     /* outline: 1px solid lightblue; */
 }
+
 :root {
     font-family: 'Noto Sans KR', sans-serif;
 }
+
 .inner {
     width: 1200px;
     margin: 0 auto;
 }
+
 li {
     list-style: none;
 }
+
 a {
     color: black;
     text-decoration: none;
 }
+
 header {
     width: 100%;
     position: sticky;
@@ -33,6 +38,7 @@ header {
     left: 0;
     z-index: 10;
 }
+
 /* top메뉴 css */
 header .inner .top {
     display: flex;
@@ -43,6 +49,7 @@ header .inner .top {
     justify-content: space-around;
     border-bottom: 1px solid rgba(87, 87, 87, 0.5);
 }
+
 .inner a.logo {
     background: url(/ex/images/House-icon.png) no-repeat 0 50% / 50px 50px;
     font-size: 1.31rem;
@@ -50,10 +57,12 @@ header .inner .top {
     padding: 20px 14px 5px 58px;
     overflow: hidden;
 }
+
 .inner .top div:last-child {
     gap: 24px;
     display: flex;
 }
+
 /* nav */
 nav {
     width: 100%;
@@ -64,12 +73,14 @@ nav {
     align-items: center;
     padding: 10px 0;
 }
+
 nav ul.gnb {
     display: flex;
     flex-direction: row;
     gap: 21px;
     align-items: center;
 }
+
 .nav ul.gnb li.tabButton {
     padding: 10px;
     font-size: 1.06rem;
@@ -80,6 +91,7 @@ nav ul.gnb {
     border-radius: 10px;
     position: relative;
 }
+
 nav ul.gnb li.tabButton ul.tabBox {
     font-size: 1.06rem;
     display: flex;
@@ -91,21 +103,25 @@ nav ul.gnb li.tabButton ul.tabBox {
     position: absolute;
     top: 40PX;
 }
-.nav ul.gnb > li > ul > li ul li {
+
+.nav ul.gnb>li>ul>li ul li {
     font-size: 0.75rem;
     padding: 2px 0 5px 0;
 }
-.nav ul.gnb > li > ul > li ul li::before {
+
+.nav ul.gnb>li>ul>li ul li::before {
     content: "\f111";
     font-size: 0.25rem;
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
     padding: 0 3px 0 0;
 }
+
 .nav ul.gnb ul.tabBox {
     width: 100%;
     display: none;
 }
+
 nav button {
     background: #53A0F8;
     height: 60px;
@@ -114,11 +130,13 @@ nav button {
     border: none;
     color: #FFFFFFD4;
 }
+
 nav div:last-child {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 .fa-solid {
     font-size: 30px;
 }
@@ -128,6 +146,7 @@ nav div:last-child {
     width: 100%;
     height: 100%;
 }
+
 .tabButton.on {
     /* width: 50%; */
     background: #FAFAE1;
@@ -136,7 +155,8 @@ nav div:last-child {
     width: 140px;
     /* height: 400px; */
 }
-.tabButton.on .tabBox{
+
+.tabButton.on .tabBox {
     padding: 10px;
     border-radius: 15px;
     background: #FAFAE1;
@@ -145,94 +165,169 @@ nav div:last-child {
     width: 140px;
     height: 380px;
 }
-.gnb.all{
+
+.gnb.all {
     background: #FAFAE1;
     border-radius: 15px;
     padding: 0 34px;
 }
-.gnb.all .tabButton{
+
+.gnb.all .tabButton {
     border-radius: 15px;
     background: #FAFAE1;
     height: 480px;
 
 }
-.gnb.all .tabButton a{
+
+.gnb.all .tabButton a {
     font-weight: bold;
     font-size: 1.25rem;
 }
+
 .menu {
     font-size: 2.375rem;
     display: flex;
     justify-content: center;
     cursor: pointer;
 }
+
 /* 지도 */
 .map{
     width: 100%;
-    height: 500px;
-    background: #F2EDE4;
+    height: 350px;
 }
-/* 주변볼거리 */
-.sec1 h2{
-    font-size: 2.5rem;
-    color: #1B2603;
-    padding: 30px 0 10px 0;
-    border-bottom: 1px solid #1B2603;
+.overlaybox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* background: url(/images/좌구산천문대.jpg) no-repeat 0 0 / cover; */
+    padding: 15px 10px;
+}
+.head{
+    background: url(/images/좌구산천문대.jpg) no-repeat 0 0 /cover;
+    width: 100%;
+    height: 150px;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+.head p{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.overlaybox div,
+ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-/* 산책코스 */
-.walk{
-    background: url(/ex/images/산책코스logo.gif) no-repeat 0 0 / 200px 200px;
+.overlaybox li {
+    list-style: none;
 }
-.car{
-    background: url(/ex/images/관광코스.gif) no-repeat 0 0 /200px 200px;
-}
-.contain{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 29px;
-}
-.sec1 h3{
-    font-size: 2.2rem;
-    color: #2D4003;
-    padding: 117px 0px 26px 150px;
-}
-.content{
-    width: 280px;
-    height: 420px;
-    display: flex;
-    /* flex-direction: column; */
-    flex-flow: column wrap;
-    justify-content: space-between;
-    gap: 17px;
-    box-shadow: 1px 4px 7px 3px rgba(9, 13, 4, 0.25);
-    /* border: 1px solid #333333; */
-    /* margin: 10px; */
-    border-radius: 15px;
-    text-align: center;
-    margin-bottom: 70px;
-}
-.content p{
-    font-size: 1.5rem;
+
+.overlaybox .boxtitle {
+    color: #fff;
+    font-size: 16px;
     font-weight: bold;
-    color: #090D04;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png') no-repeat right 120px center;
+    margin-bottom: 8px;
 }
-.content span{
-    font-size: 0.85rem;
-    color: #090D04;
-    padding: 0 5px;
+
+.overlaybox .first {
+    position: relative;
+    width: 247px;
+    height: 136px;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/thumb.png') no-repeat;
+    margin-bottom: 8px;
 }
-.content a{
-    padding: 16px 0px;
-    background: #2D4003;
-    color: white;
-    border-radius: 0 0 15px 15px;
+
+.first .text {
+    color: #fff;
+    font-weight: bold;
 }
-.content img{
+
+.first .triangle {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 0;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/triangle.png') no-repeat;
+    padding: 6px;
+    font-size: 18px;
+}
+
+.first .movietitle {
+    position: absolute;
     width: 100%;
-    height: 200px;
-    border-radius: 15px 15px 0 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 7px 15px;
+    font-size: 14px;
+}
+
+.overlaybox ul {
+    width: 247px;
+}
+
+.overlaybox li {
+    position: relative;
+    margin-bottom: 2px;
+    background: #2b2d36;
+    padding: 5px 10px;
+    color: #aaabaf;
+    line-height: 1;
+}
+
+.overlaybox li span {
+    display: inline-block;
+}
+
+.overlaybox li .number {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.overlaybox li .title {
+    font-size: 13px;
+}
+
+.overlaybox ul .arrow {
+    position: absolute;
+    margin-top: 8px;
+    right: 25px;
+    width: 5px;
+    height: 3px;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/updown.png') no-repeat;
+}
+
+.overlaybox li .up {
+    background-position: 0 -40px;
+}
+
+.overlaybox li .down {
+    background-position: 0 -60px;
+}
+
+.overlaybox li .count {
+    position: absolute;
+    margin-top: 5px;
+    right: 15px;
+    font-size: 10px;
+}
+
+.overlaybox li:hover {
+    color: #fff;
+    background: #d24545;
+}
+
+.overlaybox li:hover .up {
+    background-position: 0 0px;
+}
+
+.overlaybox li:hover .down {
+    background-position: 0 -20px;
 }
 
 /* footer */
@@ -242,17 +337,20 @@ footer {
     margin-top: 30px;
     padding: 0 0 50px 0;
 }
+
 footer .inner {
     display: flex;
     flex-direction: column;
     gap: 42px;
 }
+
 footer .site {
     display: flex;
     justify-content: space-between;
     padding: 36px 9px;
     font-size: 1.25rem;
 }
+
 footer .site select {
     /* border: none; */
     background: #F2EDE4;
@@ -263,6 +361,7 @@ footer .site select {
     font-size: 1rem;
     color: #B3AFA8;
 }
+
 footer .info {
     display: flex;
     flex-direction: column;
@@ -270,6 +369,7 @@ footer .info {
     gap: 10px;
     font-size: 0.875rem;
 }
+
 footer .info div {
     display: flex;
     gap: 30px;
