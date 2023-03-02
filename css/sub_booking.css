@@ -43,7 +43,7 @@ header .inner .top {
     border-bottom: 1px solid rgba(87, 87, 87, 0.5);
 }
 .inner a.logo {
-    background: url(/ex/images/House-icon.png) no-repeat 0 50% / 50px 50px;
+    background: url(/images/House-icon.png) no-repeat 0 50% / 50px 50px;
     font-size: 1.31rem;
     font-weight: 400;
     padding: 20px 14px 5px 58px;
