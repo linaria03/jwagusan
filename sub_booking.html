@@ -163,10 +163,12 @@
                 <button class="material-symbols-outlined"> 오토캠핑장</button>
             </div>
         </article>
+        
     </section>
-    <section>
+   
+    <section class="sec2 inner">
         <!-- 객실 -->
-        <article class="inner">
+        <article>
             <div class="room">
                 <div class="roomImg">
                 <a href="#">객실상세보기</a>
@@ -181,17 +183,51 @@
                     <button>예약하기</button>
                     <h3>가격 : </h3>
                 </div>
-
+            </div>
+        </article>
+         <!-- 예약정보-->
+        <article class="reservation">
+            <!-- 달력 -->
+            <div>
+                <table class="Calendar">
+                    <thead>
+                        <tr>
+                            <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
+                            <td colspan="5">
+                                <span id="calYear"></span>년
+                                <span id="calMonth"></span>월
+                            </td>
+                            <td onClick="nextCalendar();" style="cursor:pointer;">&#62;</td>
+                        </tr>
+                        <tr>
+                            <td>일</td>
+                            <td>월</td>
+                            <td>화</td>
+                            <td>수</td>
+                            <td>목</td>
+                            <td>금</td>
+                            <td>토</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="reservationChk">
+                <h2 class="fa-solid fa-calendar-check">예약정보</h2>
+                <p>체크인 : </p>
+                <p>체크아웃 : </p>
+                <p>총 금액 : </p>
+                <button class="buttNext">다음단계</button>
+                <div class="buttRetrun">
+                    <button >이전</button>
+                    <button>다시선택</button>
+                </div>
             </div>
         </article>
     </section>
-
-
-
-
-
-
-
+<!-- 예약확인 -->
+           
 
     <!-- swiper-slide js    -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

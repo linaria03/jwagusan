@@ -44,7 +44,7 @@ header .inner .top {
     border-bottom: 1px solid rgba(87, 87, 87, 0.5);
 }
 .inner a.logo {
-    background: url(/ex/images/House-icon.png) no-repeat 0 50% / 50px 50px;
+    background: url(/images/House-icon.png) no-repeat 0 50% / 50px 50px;
     font-size: 1.31rem;
     font-weight: 400;
     padding: 20px 14px 5px 58px;
@@ -247,7 +247,7 @@ nav div:last-child {
 .sec2 .eventHeader {
     /* font-size: 2.06rem; */
     padding: 5px 0px 0 4px;
-    background: url(/ex/images/Readmore-icon.png) no-repeat 85% 50% / 50px 50px;
+    background: url(/images/Readmore-icon.png) no-repeat 85% 50% / 50px 50px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -338,7 +338,7 @@ nav div:last-child {
 }
 .sec2 .right > h2 {
     display: flex;
-    background: url(/ex/images/프로그램소개-icon.png) no-repeat 0 50% / 50px 50px;
+    background: url(/images/프로그램소개-icon.png) no-repeat 0 50% / 50px 50px;
     font-size: 2.375rem;
     font-weight: bold;
     padding: 12px 14px 5px 65px;
@@ -394,7 +394,7 @@ nav div:last-child {
 }
 .sec3 .left h2 {
     display: flex;
-    background: url(/ex/images/map-icon.png) no-repeat 0 50% / 50px 50px;
+    background: url(/images/map-icon.png) no-repeat 0 50% / 50px 50px;
     font-size: 2.375rem;
     font-weight: bold;
     padding: 20px 14px 5px 65px;
@@ -415,7 +415,7 @@ nav div:last-child {
 }
 .sec3 .right h2 {
     display: flex;
-    background: url(/ex/images/여행정보-icon.png) no-repeat 0 50% / 50px 50px;
+    background: url(/images/여행정보-icon.png) no-repeat 0 50% / 50px 50px;
     font-size: 2.375rem;
     font-weight: bold;
     padding: 20px 14px 5px 65px;

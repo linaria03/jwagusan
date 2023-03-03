@@ -3,11 +3,13 @@
 /* 구글폰트 noto sans korean */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 /* fontawesome 아이콘 */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     line-height: 1.2;
+    color: #333;
     /* outline: 1px solid lightblue; */
 }
 :root {
@@ -143,7 +145,7 @@ nav div:last-child {
     width: 140px;
     /* height: 400px; */
 }
-.tabButton.on .tabBox{
+.tabButton.on .tabBox {
     padding: 10px;
     border-radius: 15px;
     background: #FAFAE1;
@@ -152,18 +154,18 @@ nav div:last-child {
     width: 140px;
     height: 380px;
 }
-.gnb.all{
+.gnb.all {
     background: #FAFAE1;
     border-radius: 15px;
     padding: 0 34px;
 }
-.gnb.all .tabButton{
+.gnb.all .tabButton {
     border-radius: 15px;
     background: #FAFAE1;
     height: 480px;
 
 }
-.gnb.all .tabButton a{
+.gnb.all .tabButton a {
     font-weight: bold;
     font-size: 1.25rem;
 }
@@ -171,19 +173,20 @@ nav div:last-child {
     font-size: 2.375rem;
     display: flex;
     justify-content: center;
+    color: white;
     cursor: pointer;
 }
 
 /* step */
-.stepAll{
+.stepAll {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 43px;
-    padding-top: 30px;
+    padding: 20px 0;
 }
-.step{
+.step {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,14 +194,14 @@ nav div:last-child {
     padding: 0px 0px 10px;
     gap: 13px;
 }
-.step h2{
+.step h2 {
     font-size: 1.875rem;
 }
-.step p{
+.step p {
     font-size: 1.25rem;
 }
 /* step 버튼 */
-.chk{
+.chk {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -230,51 +233,205 @@ nav div:last-child {
     content: "\e86c";
     display: block;
 }
+/* sec2 */
+.sec2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
 /* 객실 */
-.room{
+.sec2:first-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.room {
     display: flex;
     flex-flow: row wrap;
     /* flex-direction: column; */
     padding-top: 20px;
 }
-.roomImg{
-    width: 400px;
-    height: 400px;
+.roomImg {
+    width: 350px;
+    height: 330px;
     background: url(/images/sub_booking/좌구산-4인실.png) no-repeat 0 0;
     position: relative;
 }
 .roomImg > a {
     display: flex;
     justify-content: center;
-    padding: 5px 20px;
-    background: #A69180;
-    color: #F2E5D5;
+    padding: 5px 18px;
+    background: #1F3140;
+    color: #F2EFC4;
     position: absolute;
     bottom: 4%;
     left: 50%;
     transform: translate(-50%, 0);
     border-radius: 19px;
     font-size: 1.25rem;
-    
+
 }
-.detail{
+.detail {
     display: flex;
     flex-direction: column;
     padding: 0 50px 0 50px;
     gap: 16px;
     font-size: 1.25rem;
 }
-.detail button{
-    background: #0D0D0D;
-    color: white;
+.detail button {
+    background: #1F3140;
+    color: #F2EFC4;
     padding: 10px;
     text-align: center;
     font-size: 1.75rem;
     border-radius: 7px;
-    margin-top: 70px;
+    cursor: pointer;
+    margin-top: 31px;
 }
-.detail h3{
+.detail h3 {
     border-bottom: 1px solid #0D0D0D;
     padding: 20px 0 5px 0;
     font-size: 1.85rem;
+}
+
+/* 예약정보 */
+.sec2 .reservation{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+
+}
+
+/* 달력 */
+.Calendar {
+    text-align: center;
+    /* background: #b39c899c; */
+    border: 5px solid #b39c899c;
+    border-radius: 15px;
+    margin: 14px 0;
+}
+
+.Calendar > thead > tr:first-child > td {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.45rem;
+    font-weight: bold;
+    padding:10px 0;
+}
+
+.Calendar > thead > tr:last-child > td {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+}
+
+.Calendar > tbody > tr > td > p {
+    font-family: 'Montserrat', sans-serif;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    transition-duration: .2s;
+    line-height: 45px;
+    margin: 2.5px;
+    display: block;
+    text-align: center;
+}
+
+.pastDay {
+    color: lightgray;
+}
+
+.today {
+    background-color: #F5D042;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.futureDay {
+    /* background-color: #FFFFFF; */
+    cursor: pointer;
+}
+.futureDay:hover {
+    background: #eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+    background: #0A174E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+/* 달력 버튼 */
+.choiceDay:nth-of-type(1)::before{
+    content: "체크인";
+    position: absolute;
+    /* display: flex; */
+    background: #1F3140;
+    color: #F2EFC4;
+    font-size: 0.625rem;
+    top: 100%;
+}
+.choiceDay:nth-of-type(2)::before{
+    content: "체크아웃";
+    position: absolute;
+    /* display: flex; */
+    background: #1F3140;
+    color: #F2EFC4;
+    font-size: 0.625rem;
+    top: 100%;
+}
+
+
+
+/* 예약확인 */
+.reservationChk{
+    padding: 10px;
+    
+}
+.reservationChk h2{
+    display: flex;
+    flex-direction: row;
+    font-size: 2.25rem;
+    text-align: center;
+    /* padding: 0 0 0 10px; */
+}
+.reservationChk h2::before{
+    content: "\f274";
+    /* content: "\e614"; */
+    font-size: 2.25rem;
+    padding: 0 10px 0 0;
+    text-align: center;
+}
+.reservationChk p{
+    font-size: 1.875rem;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+.reservationChk .buttNext{
+    font-size: 1.875rem;
+    background: #1F3140;
+    color: #F2EFC4;
+    padding: 10px 108px;
+    margin: 5px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.reservationChk .buttRetrun{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.reservationChk .buttRetrun button{
+    font-size: 1.875rem;
+    background: #1F3140;
+    color: #F2EFC4;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
 }
