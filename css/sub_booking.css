@@ -262,14 +262,14 @@ nav div:last-child {
 .roomImg > a {
     display: flex;
     justify-content: center;
-    padding: 5px 18px;
+    padding: 6px 23px;
     background: #1F3140;
     color: #F2EFC4;
     position: absolute;
     bottom: 4%;
     left: 50%;
     transform: translate(-50%, 0);
-    border-radius: 19px;
+    border-radius: 5px;
     font-size: 1.25rem;
 
 }
