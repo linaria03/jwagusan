@@ -372,10 +372,13 @@ nav div:last-child {
     content: "체크인";
     position: absolute;
     /* display: flex; */
-    background: #1F3140;
+    /* background: #1F3140; */
+    background: #0A174E;
     color: #F2EFC4;
     font-size: 0.625rem;
-    top: 100%;
+    top: 0;
+    left: 17%;
+    border-radius: 50%;
 }
 .choiceDay:nth-of-type(2)::before{
     content: "체크아웃";
