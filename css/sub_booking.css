@@ -251,34 +251,40 @@ nav div:last-child {
     display: flex;
     flex-flow: row wrap;
     /* flex-direction: column; */
+    align-items: flex-start;
     padding-top: 20px;
+    /* margin-top: 20px; */
 }
-.roomImg {
+.roomImg  img{
     width: 350px;
     height: 330px;
-    background: url(/images/sub_booking/좌구산-4인실.png) no-repeat 0 0;
-    position: relative;
+    /* height: 100%; */
+    /* position: relative; */
+    /* object-fit: cover;
+    vertical-align: bottom; */
 }
-.roomImg > a {
+.roomImg  a {
     display: flex;
     justify-content: center;
     padding: 6px 23px;
     background: #1F3140;
     color: #F2EFC4;
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: relative;
+    /* top: 63%;
+    left: 23%; */
+    /* transform: translate(-50%, 0); */
     border-radius: 5px;
     font-size: 1.25rem;
 
 }
-.detail {
+
+.detail{
     display: flex;
     flex-direction: column;
-    padding: 0 50px 0 50px;
+    padding: 5px 50px 0 50px;
     gap: 16px;
     font-size: 1.25rem;
+    justify-content: center;
 }
 .detail button {
     background: #1F3140;
@@ -288,21 +294,25 @@ nav div:last-child {
     font-size: 1.75rem;
     border-radius: 7px;
     cursor: pointer;
-    margin-top: 31px;
+    margin-top: 22px;
 }
 .detail h3 {
     border-bottom: 1px solid #0D0D0D;
     padding: 20px 0 5px 0;
     font-size: 1.85rem;
+    margin-bottom: 27px;
 }
 
 /* 예약정보 */
-.sec2 .reservation{
+.reservation{
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
 
 }
 
@@ -357,18 +367,22 @@ nav div:last-child {
 .futureDay:hover {
     background: #eee;
 }
-
-.futureDay.choiceDay,
-.today.choiceDay {
+.choiceDay .futureDay{
     background: #0A174E;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
     position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    transition-duration: .2s;
+    margin: 2.5px;
+    text-align: center;
 }
 
 /* 달력 버튼 */
-.choiceDay:nth-of-type(1)::before{
+.choiceDay .futureDay:nth-of-type(0)::before{
     content: "체크인";
     position: absolute;
     /* display: flex; */
@@ -380,7 +394,7 @@ nav div:last-child {
     left: 17%;
     border-radius: 50%;
 }
-.choiceDay:nth-of-type(2)::before{
+.choiceDay:nth-of-type(1)::before{
     content: "체크아웃";
     position: absolute;
     /* display: flex; */

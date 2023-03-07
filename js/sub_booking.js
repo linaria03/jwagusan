@@ -24,24 +24,11 @@ $(".menu").click(function () {
 // 💛공지사항버튼
 $(".chk button").click(function () {
   var tabindex = $(this).index();
-  console.log(tabindex);
+  // console.log(tabindex);
   $(this).addClass('on').siblings().removeClass('on');
   // $(".eventDate").eq(tabindex).addClass('on').siblings().removeClass('on');
 });
 $(".chk button").eq(0).trigger('click');
-
-//💛객실 데이터
-// $(".room").append("<img>");
-// let room = {
-//   single4 : {
-//     src : "/images/sub_booking/시설예약-객실사진.png",
-//     alt : "좌구산 휴양림 4인실",
-//   }
-// };
-
-// $(".room >img").attr({
-//   src: Object.values(single4)[0]
-// });
 
 
 //💛달력
@@ -99,21 +86,20 @@ function buildCalendar() {
 }
 
 // 날짜 선택
-function choiceDate(newDIV) {
-  var choiceDay=document.querySelectorAll(".choiceDay")
- 
-  // if (document.getElementsByClassName("choiceDay")[0]) {                              // 기존에 선택한 날짜가 있으면
-  //   // document.getElementsByClassName("choiceDay")[0].classList.remove("choiceDay");  // 해당 날짜의 "choiceDay" class 제거
 
-  // }
-  if(document.getElementsByClassName("choiceDay")[1]){
+function choiceDate(newDIV) {
+  var choiceDay = document.querySelectorAll(".choiceDay");
+  if (document.getElementsByClassName("choiceDay")[1]) {
     
     choiceDay.forEach((element) => {
       element.classList.remove('choiceDay');
     });
-  }
-  newDIV.classList.add("choiceDay");           // 선택된 날짜에 "choiceDay" class 추가
+  } //선택된 날짜 일괄 삭제
+  // newDIV.classList.add("choiceDay");           // 선택된 날짜에 "choiceDay" class 추가
+  newDIV.parentNode.classList.add("choiceDay");
+  console.log(choiceDay)
 }
+
 
 // 이전달 버튼 클릭
 function prevCalendar() {
@@ -136,3 +122,51 @@ function leftPad(value) {
 }
 
 
+//💛객실 json
+$.ajax({
+  type: "GET",
+  url: "js/sub_booking.json",
+  dataType: "json",
+  success: function (data) {
+    var elem = "";
+    $.each(data, function (index, obj) {
+      // this는 각 obj를 의미한다.
+      elem += `<div class="roomImg">`;
+      elem += `<img src='${this.img}' alt='${this.name}'>`;
+      elem += `<a>${this.link}</a>`;
+      elem += `</div>`;
+      elem += `<div class="detail">`;
+      elem += `<p>${this.name}</p>`;
+      elem += `<p>${this.people}</p>`;
+      elem += `<p>${this.option}</p>`;
+      elem += `<p>${this.time}</p>`;
+      elem += `<button>${this.button}</button>`;
+      elem += `<h3>${this.price}</h3>`;
+      elem += `</div>`;
+    });
+    $(".room").append(elem);
+  },
+  error: function (xhr) {
+    console.log(xhr.status + "/" + xhr.errorText);
+  }
+});
+
+
+    // function choiceDate(newDIV) {
+    //   var choiceDay = document.querySelectorAll(".choiceDay");
+    //   console.log(choiceDay)
+    
+    //   // if (document.getElementsByClassName("choiceDay")[0]) {                              // 기존에 선택한 날짜가 있으면
+    //   //   // document.getElementsByClassName("choiceDay")[0].classList.remove("choiceDay");  // 해당 날짜의 "choiceDay" class 제거
+    
+    //   // }
+    //   if (document.getElementsByClassName("choiceDay")[1]) {
+    
+    //     choiceDay.forEach((element) => {
+    //       element.classList.remove('choiceDay');
+    //     });
+    //   } //선택된 날짜 일괄 삭제
+    //   newDIV.classList.add("choiceDay");           // 선택된 날짜에 "choiceDay" class 추가
+    // }
+    
+// };

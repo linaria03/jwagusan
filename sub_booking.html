@@ -163,29 +163,30 @@
                 <button class="material-symbols-outlined"> 오토캠핑장</button>
             </div>
         </article>
-        
+
     </section>
-   
+
     <section class="sec2 inner">
         <!-- 객실 -->
         <article>
             <div class="room">
-                <div class="roomImg">
-                <a href="#">객실상세보기</a>
-                </div>
-                <div class="detail">
-                    <p>[좌구산자연휴양림]큰곰별</p>
+                <!-- <div class="roomImg"> -->
+                    <!-- <img src="/images/sub_booking/좌구산-4인실.png" alt="">
+                    <a href="#">객실상세보기</a> -->
+                <!-- </div> -->
+                <!-- <div class="detail"> -->
+                    <!-- <p>[좌구산자연휴양림]큰곰별</p>
                     <p>4/4인실(26m²)</p>
                     <p>편의시설 :
                         <img src="/images/sub_booking/편의시설icon.png" alt>
                     </p>
                     <p>입/퇴실 시간 : 15:00 ~ 12:00</p>
                     <button>예약하기</button>
-                    <h3>가격 : </h3>
-                </div>
+                    <h3>가격 : </h3> -->
+                <!-- </div> -->
             </div>
         </article>
-         <!-- 예약정보-->
+        <!-- 예약정보-->
         <article class="reservation">
             <!-- 달력 -->
             <div>
@@ -193,7 +194,7 @@
                     <thead>
                         <tr>
                             <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
-                            <td colspan="5">
+                            <td colspan="5" id="yyyymm">
                                 <span id="calYear"></span>년
                                 <span id="calMonth"></span>월
                             </td>
@@ -220,21 +221,23 @@
                 <p>총 금액 : </p>
                 <button class="buttNext">다음단계</button>
                 <div class="buttRetrun">
-                    <button >이전</button>
+                    <button>이전</button>
                     <button>다시선택</button>
                 </div>
             </div>
         </article>
     </section>
-<!-- 예약확인 -->
-           
+    <!-- 예약확인 -->
+
+
+
 
     <!-- swiper-slide js    -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- jwagusan javascript -->
-    <script src="/ex/js/sub_booking.js"></script>
+    <script src="/js/sub_booking.js"></script>
 </body>
 
 </html>
