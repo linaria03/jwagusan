@@ -73,6 +73,7 @@ function buildCalendar() {
 
     if (nowDay < today) {                       // 지난날인 경우
       newDIV.className = "pastDay";
+      //클릭이벤트 막기 추가
     }
     else if (nowDay.getFullYear() == today.getFullYear() && nowDay.getMonth() == today.getMonth() && nowDay.getDate() == today.getDate()) { // 오늘인 경우           
       newDIV.className = "today";
@@ -98,9 +99,8 @@ function choiceDate(newDIV) {
     choiceDay.forEach((element) => {
       element.classList.remove('choiceDay');            //선택된 날짜 일괄 삭제
     });
-
   }
-  if (document.getElementsByClassName("choiceDay")[0]) {
+  else if (document.getElementsByClassName("choiceDay")[0]) {
     // console.log(choiceDay.length);//체크아웃 찍을때
     checkOut.innerText = chkDay;
   } else {
