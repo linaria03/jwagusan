@@ -426,7 +426,7 @@ nav div:last-child {
     text-align: center;
 }
 .reservationChk p{
-    font-size: 1.875rem;
+    font-size: 1.7rem;
     padding: 10px;
     border-bottom: 1px solid #333;
 }
@@ -452,3 +452,6 @@ nav div:last-child {
     text-align: center;
     cursor: pointer;
 }
+/* #checkIn{
+    font-size: 0.875rem;
+} */

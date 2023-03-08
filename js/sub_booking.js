@@ -38,7 +38,7 @@ let nowMonth = new Date();  // 현재 달을 페이지를 로드한 날의 달�
 let today = new Date();     // 페이지를 로드한 날짜를 저장
 today.setHours(0, 0, 0, 0);    // 비교 편의를 위해 today의 시간을 초기화
 
-// 달력 생성 : 해당 달에 맞춰 테이블을 만들고, 날짜를 채워 넣는다.
+// 💚달력 생성 : 해당 달에 맞춰 테이블을 만들고, 날짜를 채워 넣는다.
 function buildCalendar() {
 
   let firstDate = new Date(nowMonth.getFullYear(), nowMonth.getMonth(), 1);     // 이번달 1일
@@ -85,28 +85,74 @@ function buildCalendar() {
   }
 }
 
-// 날짜 선택
-
+// 💚날짜 선택
 function choiceDate(newDIV) {
   var choiceDay = document.querySelectorAll(".choiceDay");
+  var yyyy = document.querySelector('#calYear').textContent;
+  var mm = document.querySelector('#calMonth').textContent;
+  var dd = newDIV.textContent;
   if (document.getElementsByClassName("choiceDay")[1]) {
-    
     choiceDay.forEach((element) => {
-      element.classList.remove('choiceDay');
+      element.classList.remove('choiceDay');            //선택된 날짜 일괄 삭제
     });
-  } //선택된 날짜 일괄 삭제
-  // newDIV.classList.add("choiceDay");           // 선택된 날짜에 "choiceDay" class 추가
-  newDIV.parentNode.classList.add("choiceDay");
-  console.log(choiceDay)
+  }
+  newDIV.parentNode.classList.add("choiceDay");           // 선택된 날짜(td)에 "choiceDay" class 추가
+  // let dd = newDIV.textContent;
+  let chkDay = `${yyyy}년 ${mm}월 ${dd}일`;
+  // console.log(chkDay)
+  checkIn.innerText = chkDay
 }
 
 
-// 이전달 버튼 클릭
+function choiceDate(newDIV) {
+  var choiceDay = document.querySelectorAll(".choiceDay");
+  var yyyy = document.querySelector('#calYear').textContent;
+  var mm = document.querySelector('#calMonth').textContent;
+  var dd = newDIV.textContent;
+  var chkDay = `${yyyy}년 ${mm}월 ${dd}일`;
+  if (document.getElementsByClassName("choiceDay")[1]) {
+    choiceDay.forEach((element) => {
+      element.classList.remove('choiceDay');            //선택된 날짜 일괄 삭제
+    });
+  } if(document.getElementsByClassName("choiceDay")[0]){
+    checkOut.innerText = chkDay
+  }
+  newDIV.parentNode.classList.add("choiceDay");           // 선택된 날짜(td)에 "choiceDay" class 추가
+  // let dd = newDIV.textContent;
+  // let chkDay = `${yyyy}년 ${mm}월 ${dd}일`;
+  // console.log(chkDay)
+  checkIn.innerText = chkDay
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 💚이전달 버튼 클릭
 function prevCalendar() {
   nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() - 1, nowMonth.getDate());   // 현재 달을 1 감소
   buildCalendar();    // 달력 다시 생성
 }
-// 다음달 버튼 클릭
+// 💚다음달 버튼 클릭
 function nextCalendar() {
   nowMonth = new Date(nowMonth.getFullYear(), nowMonth.getMonth() + 1, nowMonth.getDate());   // 현재 달을 1 증가
   buildCalendar();    // 달력 다시 생성
@@ -141,7 +187,7 @@ $.ajax({
       elem += `<p>${this.option}</p>`;
       elem += `<p>${this.time}</p>`;
       elem += `<button>${this.button}</button>`;
-      elem += `<h3>${this.price}</h3>`;
+      elem += `<h3 class="oPrice">${this.price}</h3>`;
       elem += `</div>`;
     });
     $(".room").append(elem);
@@ -152,21 +198,5 @@ $.ajax({
 });
 
 
-    // function choiceDate(newDIV) {
-    //   var choiceDay = document.querySelectorAll(".choiceDay");
-    //   console.log(choiceDay)
-    
-    //   // if (document.getElementsByClassName("choiceDay")[0]) {                              // 기존에 선택한 날짜가 있으면
-    //   //   // document.getElementsByClassName("choiceDay")[0].classList.remove("choiceDay");  // 해당 날짜의 "choiceDay" class 제거
-    
-    //   // }
-    //   if (document.getElementsByClassName("choiceDay")[1]) {
-    
-    //     choiceDay.forEach((element) => {
-    //       element.classList.remove('choiceDay');
-    //     });
-    //   } //선택된 날짜 일괄 삭제
-    //   newDIV.classList.add("choiceDay");           // 선택된 날짜에 "choiceDay" class 추가
-    // }
-    
-// };
+//💛가격계산
+
