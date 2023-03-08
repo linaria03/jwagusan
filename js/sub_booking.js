@@ -86,23 +86,6 @@ function buildCalendar() {
 }
 
 // 💚날짜 선택
-function choiceDate(newDIV) {
-  var choiceDay = document.querySelectorAll(".choiceDay");
-  var yyyy = document.querySelector('#calYear').textContent;
-  var mm = document.querySelector('#calMonth').textContent;
-  var dd = newDIV.textContent;
-  if (document.getElementsByClassName("choiceDay")[1]) {
-    choiceDay.forEach((element) => {
-      element.classList.remove('choiceDay');            //선택된 날짜 일괄 삭제
-    });
-  }
-  newDIV.parentNode.classList.add("choiceDay");           // 선택된 날짜(td)에 "choiceDay" class 추가
-  // let dd = newDIV.textContent;
-  let chkDay = `${yyyy}년 ${mm}월 ${dd}일`;
-  // console.log(chkDay)
-  checkIn.innerText = chkDay
-}
-
 
 function choiceDate(newDIV) {
   var choiceDay = document.querySelectorAll(".choiceDay");
@@ -111,40 +94,22 @@ function choiceDate(newDIV) {
   var dd = newDIV.textContent;
   var chkDay = `${yyyy}년 ${mm}월 ${dd}일`;
   if (document.getElementsByClassName("choiceDay")[1]) {
+    // console.log(choiceDay.length);// 초기화 될때
     choiceDay.forEach((element) => {
       element.classList.remove('choiceDay');            //선택된 날짜 일괄 삭제
     });
-  } if(document.getElementsByClassName("choiceDay")[0]){
-    checkOut.innerText = chkDay
+
   }
-  newDIV.parentNode.classList.add("choiceDay");           // 선택된 날짜(td)에 "choiceDay" class 추가
-  // let dd = newDIV.textContent;
-  // let chkDay = `${yyyy}년 ${mm}월 ${dd}일`;
-  // console.log(chkDay)
-  checkIn.innerText = chkDay
+  if (document.getElementsByClassName("choiceDay")[0]) {
+    // console.log(choiceDay.length);//체크아웃 찍을때
+    checkOut.innerText = chkDay;
+  } else {
+    newDIV.parentNode.classList.add("choiceDay");           // 선택된 날짜(td)에 "choiceDay" class 추가
+    // console.log(choiceDay.length);//체크인 찍을때
+    checkIn.innerText = chkDay;
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // 💚이전달 버튼 클릭
