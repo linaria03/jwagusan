@@ -102,6 +102,7 @@ function choiceDate(newDIV) {
   }
   else if (document.getElementsByClassName("choiceDay")[0]) {
     // console.log(choiceDay.length);//체크아웃 찍을때
+    newDIV.parentNode.classList.add("choiceDay");
     checkOut.innerText = chkDay;
   } else {
     newDIV.parentNode.classList.add("choiceDay");           // 선택된 날짜(td)에 "choiceDay" class 추가
@@ -136,7 +137,7 @@ function leftPad(value) {
 //💛객실 json
 $.ajax({
   type: "GET",
-  url: "js/sub_booking.json",
+  url: "js/sub_booking_pay.json",
   dataType: "json",
   success: function (data) {
     var elem = "";
@@ -152,10 +153,13 @@ $.ajax({
       elem += `<p>${this.option}</p>`;
       elem += `<p>${this.time}</p>`;
       elem += `<button>${this.button}</button>`;
-      elem += `<h3 class="oPrice">${this.price}</h3>`;
+      elem += `<h3>${this.price}<span class="dayPrice">${this.dayPrice}</span><span class="weekPrice">${this.weekPrice}</span></h3>`;
       elem += `</div>`;
     });
     $(".room").append(elem);
+    if(today.getDay() % 6 == 0){
+      $(".weekPrice").add("wp")
+    }
   },
   error: function (xhr) {
     console.log(xhr.status + "/" + xhr.errorText);
@@ -163,5 +167,7 @@ $.ajax({
 });
 
 
-//💛가격계산
-
+//💛가격
+if(today.getDay() % 6 == 0){
+  $(".weekPrice").add("wp")
+}

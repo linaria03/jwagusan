@@ -270,11 +270,9 @@ nav div:last-child {
     background: #1F3140;
     color: #F2EFC4;
     position: relative;
-    /* top: 63%;
-    left: 23%; */
-    /* transform: translate(-50%, 0); */
     border-radius: 5px;
     font-size: 1.25rem;
+    cursor: pointer;
 
 }
 
@@ -427,7 +425,8 @@ nav div:last-child {
 }
 .reservationChk p{
     font-size: 1.7rem;
-    padding: 10px;
+    /* font-weight: bold; */
+    padding: 10px 0;
     border-bottom: 1px solid #333;
 }
 .reservationChk .buttNext{
@@ -452,6 +451,19 @@ nav div:last-child {
     text-align: center;
     cursor: pointer;
 }
-/* #checkIn{
-    font-size: 0.875rem;
-} */
+#checkIn,#checkOut{
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* color: #53A0F8; */
+}
+
+
+
+
+
+.dayPrice,.weekPrice{
+    display: none;
+}
+.weekPrice .wp{
+    display: block;
+}
