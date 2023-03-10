@@ -303,9 +303,16 @@ nav div:last-child {
 }
 .detail div span{
     font-size: 1.5rem;
-    padding: 0 0 0 10px;
+    padding: 0 0 3px 10px;
     border-bottom: 1px solid #333;
 }
+.detail .weekPrice{
+    padding: 0px 0 3px 92px;
+}
+.detail .peak{
+    padding: 0px 0 3px 70px;
+}
+
 
 /* 예약정보 */
 .reservation{
