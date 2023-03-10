@@ -272,7 +272,7 @@ nav div:last-child {
     position: relative;
     border-radius: 5px;
     font-size: 1.25rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 }
 
@@ -292,13 +292,19 @@ nav div:last-child {
     font-size: 1.75rem;
     border-radius: 7px;
     cursor: pointer;
-    margin-top: 22px;
+    /* margin-top: 22px; */
 }
-.detail h3 {
-    border-bottom: 1px solid #0D0D0D;
-    padding: 20px 0 5px 0;
+.detail div {
+    /* border-bottom: 1px solid #0D0D0D; */
+    padding: 0px 0 5px 0;
     font-size: 1.85rem;
-    margin-bottom: 27px;
+    font-weight: bold;
+    /* margin-bottom: 27px; */
+}
+.detail div span{
+    font-size: 1.5rem;
+    padding: 0 0 0 10px;
+    border-bottom: 1px solid #333;
 }
 
 /* 예약정보 */
@@ -461,9 +467,9 @@ nav div:last-child {
 
 
 
-.dayPrice,.weekPrice{
+/* .dayPrice,.weekPrice{
     display: none;
-}
-.weekPrice .wp{
+} */
+/* .weekPrice .wp{
     display: block;
-}
+} */

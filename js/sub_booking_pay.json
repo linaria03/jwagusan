@@ -8,8 +8,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-4인실.png",
@@ -20,8 +21,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-4인실.png",
@@ -32,8 +34,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-4인실.png",
@@ -44,8 +47,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-8인실.png",
@@ -56,8 +60,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "110,000",
-    "weekPrice": "170,000"
+    "dayPrice": "(평일) 110000",
+    "weekPrice": "(주말) 170000",
+    "peak": "(성수기) 170000"
   },
   {
     "img": "images/sub_booking/좌구산-8인실.png",
@@ -68,8 +73,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "110,000",
-    "weekPrice": "170,000"
+    "dayPrice": "(평일) 110000",
+    "weekPrice": "(주말) 170000",
+    "peak": "(성수기) 170000"
   },
   {
     "img": "images/sub_booking/좌구산-12인실.png",
@@ -80,8 +86,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "130,000",
-    "weekPrice": "200,000"
+    "dayPrice": "(평일) 130000",
+    "weekPrice": "(주말) 200000",
+    "peak": "(성수기) 200000"
   },
   {
     "img": "images/sub_booking/좌구산-12인실.png",
@@ -92,8 +99,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "130,000",
-    "weekPrice": "200,000"
+    "dayPrice": "(평일) 130000",
+    "weekPrice": "(주말) 200000",
+    "peak": "(성수기) 200000"
   },
   {
     "img": "images/sub_booking/좌구산-12인실.png",
@@ -104,8 +112,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "130,000",
-    "weekPrice": "200,000"
+    "dayPrice": "(평일) 130000",
+    "weekPrice": "(주말) 200000",
+    "peak": "(성수기) 200000"
   },
   {
     "img": "images/sub_booking/좌구산-12인실.png",
@@ -116,8 +125,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "130,000",
-    "weekPrice": "200,000"
+    "dayPrice": "(평일)130000",
+    "weekPrice": "(주말) 200000",
+    "peak": "(성수기) 200000"
   },
   {
     "img": "images/sub_booking/좌구산-15인실.png",
@@ -128,8 +138,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "160,000",
-    "weekPrice": "240,000"
+    "dayPrice": "(평일) 160000",
+    "weekPrice": "(주말) 240000",
+    "peak": "(성수기) 240000"
   },
   {
     "img": "images/sub_booking/좌구산-15인실.png",
@@ -140,8 +151,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "160,000",
-    "weekPrice": "240,000"
+    "dayPrice": "(평일) 160000",
+    "weekPrice": "(주말) 240000",
+    "peak": "(성수기) 240000"
   },
   {
     "img": "images/sub_booking/좌구산-15인실.png",
@@ -152,8 +164,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "160,000",
-    "weekPrice": "240,000"
+    "dayPrice": "(평일) 160000",
+    "weekPrice": "(주말) 240000",
+    "peak": "(성수기) 240000"
   },
   {
     "img": "images/sub_booking/좌구산-15인실.png",
@@ -164,8 +177,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "160,000",
-    "weekPrice": "240,000"
+    "dayPrice": "(평일) 160000",
+    "weekPrice": "(주말) 240000",
+    "peak": "(성수기) 240000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -176,8 +190,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "40,000",
-    "weekPrice": "60,000"
+    "dayPrice": "(평일) 40000",
+    "weekPrice": "(주말) 60000",
+    "peak": "(성수기) 60000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -188,8 +203,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "40,000",
-    "weekPrice": "60,000"
+    "dayPrice": "(평일) 40000",
+    "weekPrice": "(주말) 60000",
+    "peak": "(성수기) 60000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -200,8 +216,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "40,000",
-    "weekPrice": "60,000"
+    "dayPrice": "(평일) 40000",
+    "weekPrice": "(주말) 60000",
+    "peak": "(성수기) 60000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -212,8 +229,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "40,000",
-    "weekPrice": "60,000"
+    "dayPrice": "(평일) 40000",
+    "weekPrice": "(주말) 60000",
+    "peak": "(성수기) 60000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -224,8 +242,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -236,8 +255,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -248,8 +268,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -260,8 +281,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -272,8 +294,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "50,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 50000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -284,8 +307,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "80,000",
-    "weekPrice": "120,000"
+    "dayPrice": "(평일) 80000",
+    "weekPrice": "(주말) 120000",
+    "peak": "(성수기) 120000"
   },
   {
     "img": "images/sub_booking/좌구산-연립동.png",
@@ -296,8 +320,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "80,000",
-    "weekPrice": "120,000"
+    "dayPrice": "(평일) 80000",
+    "weekPrice": "(주말) 120000",
+    "peak": "(성수기) 120000"
   },
   {
     "img": "images/sub_booking/좌구산-병영하우스.png",
@@ -308,8 +333,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "100,000",
-    "weekPrice": "150,000"
+    "dayPrice": "(평일) 100000",
+    "weekPrice": "(주말) 150000",
+    "peak": "(성수기) 150000"
   },
   {
     "img": "images/sub_booking/좌구산-병영하우스.png",
@@ -320,8 +346,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "100,000",
-    "weekPrice": "150,000"
+    "dayPrice": "(평일) 100000",
+    "weekPrice": "(주말) 150000",
+    "peak": "(성수기) 150000"
   },
   {
     "img": "images/sub_booking/좌구산-병영하우스.png",
@@ -332,8 +359,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "100,000",
-    "weekPrice": "150,000"
+    "dayPrice": "(평일) 100000",
+    "weekPrice": "(주말) 150000",
+    "peak": "(성수기) 150000"
   },
   {
     "img": "images/sub_booking/좌구산-병영하우스.png",
@@ -344,8 +372,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "100,000",
-    "weekPrice": "150,000"
+    "dayPrice": "(평일) 100000",
+    "weekPrice": "(주말) 150000",
+    "peak": "(성수기) 150000"
   },
   {
     "img": "images/sub_booking/좌구산-율리휴양촌.png",
@@ -356,8 +385,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "60,000",
-    "weekPrice": "110,000"
+    "dayPrice": "(평일) 60000",
+    "weekPrice": "(주말) 110000",
+    "peak": "(성수기) 110000"
   },
   {
     "img": "images/sub_booking/좌구산-율리휴양촌.png",
@@ -368,8 +398,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "80,000",
-    "weekPrice": "130,000"
+    "dayPrice": "(평일) 80000",
+    "weekPrice": "(주말) 130000",
+    "peak": "(성수기) 130000"
   },
   {
     "img": "images/sub_booking/좌구산-율리휴양촌.png",
@@ -380,8 +411,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "80,000",
-    "weekPrice": "130,000"
+    "dayPrice": "(평일) 80000",
+    "weekPrice": "(주말) 130000",
+    "peak": "(성수기) 130000"
   },
   {
     "img": "images/sub_booking/좌구산-율리휴양촌.png",
@@ -392,8 +424,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "100,000",
-    "weekPrice": "170,000"
+    "dayPrice": "(평일) 100000",
+    "weekPrice": "(주말) 170000",
+    "peak": "(성수기) 170000"
   },
   {
     "img": "images/sub_booking/좌구산-초정.png",
@@ -404,8 +437,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "40,000",
-    "weekPrice": "80,000"
+    "dayPrice": "(평일) 40000",
+    "weekPrice": "(주말) 80000",
+    "peak": "(성수기) 80000"
   },
   {
     "img": "images/sub_booking/좌구산-초정.png",
@@ -416,8 +450,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "100,000",
-    "weekPrice": "160,000"
+    "dayPrice": "(평일) 100000",
+    "weekPrice": "(주말) 160000",
+    "peak": "(성수기) 160000"
   },
   {
     "img": "images/sub_booking/좌구산-초정.png",
@@ -428,8 +463,9 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "130,000",
-    "weekPrice": "200,000"
+    "dayPrice": "(평일) 130000",
+    "weekPrice": "(주말) 200000",
+    "peak": "(성수기) 200000"
   },
   {
     "img": "images/sub_booking/좌구산-초정.png",
@@ -440,7 +476,8 @@
     "time": "15:00 ~ 12:00",
     "button": "예약하기",
     "price": "가격 :",
-    "dayPrice": "160,000",
-    "weekPrice": "240,000"
+    "dayPrice": "(평일) 160000",
+    "weekPrice": "(주말) 240000",
+    "peak": "(성수기) 240000"
   }
 ]

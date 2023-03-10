@@ -98,6 +98,8 @@ function choiceDate(newDIV) {
     // console.log(choiceDay.length);// 초기화 될때
     choiceDay.forEach((element) => {
       element.classList.remove('choiceDay');            //선택된 날짜 일괄 삭제
+      // $('checkIn').remove;
+      // element.remove('chkDay');
     });
   }
   else if (document.getElementsByClassName("choiceDay")[0]) {
@@ -153,13 +155,14 @@ $.ajax({
       elem += `<p>${this.option}</p>`;
       elem += `<p>${this.time}</p>`;
       elem += `<button>${this.button}</button>`;
-      elem += `<h3>${this.price}<span class="dayPrice">${this.dayPrice}</span><span class="weekPrice">${this.weekPrice}</span></h3>`;
+      elem += `<div>${this.price}
+      <span class="dayPrice">${this.dayPrice}</span><br>
+      <span class="weekPrice">${this.weekPrice}</span><br>
+      <span class ="peak">${this.peak}</span>
+      </div>`;
       elem += `</div>`;
     });
     $(".room").append(elem);
-    if(today.getDay() % 6 == 0){
-      $(".weekPrice").add("wp")
-    }
   },
   error: function (xhr) {
     console.log(xhr.status + "/" + xhr.errorText);
@@ -168,6 +171,17 @@ $.ajax({
 
 
 //💛가격
-if(today.getDay() % 6 == 0){
-  $(".weekPrice").add("wp")
-}
+// if(today.getDay() % 6 == 0){
+  //   $(".weekPrice").addClass("wp")
+  // }
+  if(today.getDay(newDIV) % 6 == 0){
+      $(".weekPrice").addClass("wp")
+    }
+
+$("button").on("click",function(){
+  if(newDIV.getDay() % 6 == 0){
+    $(".weekPrice").addClass("wp")
+  }
+
+})
+
