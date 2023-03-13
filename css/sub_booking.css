@@ -252,12 +252,12 @@ nav div:last-child {
     flex-flow: row wrap;
     /* flex-direction: column; */
     align-items: flex-start;
-    padding-top: 20px;
-    /* margin-top: 20px; */
+    padding: 20px 0;
+    gap: 30px 0;
 }
 .roomImg  img{
-    width: 350px;
-    height: 330px;
+    width: 300px;
+    height: 360px;
     /* height: 100%; */
     /* position: relative; */
     /* object-fit: cover;
@@ -279,38 +279,26 @@ nav div:last-child {
 .detail{
     display: flex;
     flex-direction: column;
-    padding: 5px 50px 0 50px;
-    gap: 16px;
+    padding: 5px 0px 0 38px;
+    gap: 25px;
     font-size: 1.25rem;
     justify-content: center;
 }
 .detail button {
     background: #1F3140;
     color: #F2EFC4;
-    padding: 10px;
+    padding: 5px 10px;
     text-align: center;
     font-size: 1.75rem;
     border-radius: 7px;
     cursor: pointer;
     /* margin-top: 22px; */
 }
-.detail div {
-    /* border-bottom: 1px solid #0D0D0D; */
-    padding: 0px 0 5px 0;
-    font-size: 1.85rem;
+.price{
+    font-size: 1.3rem;
     font-weight: bold;
-    /* margin-bottom: 27px; */
-}
-.detail div span{
-    font-size: 1.5rem;
-    padding: 0 0 3px 10px;
     border-bottom: 1px solid #333;
-}
-.detail .weekPrice{
-    padding: 0px 0 3px 92px;
-}
-.detail .peak{
-    padding: 0px 0 3px 70px;
+    padding-bottom: 5px;
 }
 
 
@@ -464,7 +452,7 @@ nav div:last-child {
     text-align: center;
     cursor: pointer;
 }
-#checkIn,#checkOut{
+#checkIn,#checkOut,#totalAmount{
     font-weight: bold;
     font-size: 1.5rem;
     /* color: #53A0F8; */

@@ -147,41 +147,65 @@ $.ajax({
       // this는 각 obj를 의미한다.
       elem += `<div class="roomImg">`;
       elem += `<img src='${this.img}' alt='${this.name}'>`;
-      elem += `<a>${this.link}</a>`;
+      // elem += `<a>${this.link}</a>`;
       elem += `</div>`;
       elem += `<div class="detail">`;
       elem += `<p>${this.name}</p>`;
       elem += `<p>${this.people}</p>`;
       elem += `<p>${this.option}</p>`;
-      elem += `<p>${this.time}</p>`;
+      elem += `<p>입/퇴실시간 : ${this.time}</p>`;
       elem += `<button>${this.button}</button>`;
-      elem += `<div>${this.price}
-      <span class="dayPrice">${this.dayPrice}</span><br>
-      <span class="weekPrice">${this.weekPrice}</span><br>
-      <span class ="peak">${this.peak}</span>
+      elem += `<div class="price">가격 : 
+      <span>(평일)<span class="dayPrice">${this.dayPrice}</span><span>
+      <span>(주말)<span class="weekPrice">${this.weekPrice}</span><span>
+      <span>(성수기)<span class="peak">${this.peak}</span><span>
       </div>`;
       elem += `</div>`;
     });
     $(".room").append(elem);
+    $(".detail button").on("click", function () {
+
+      let chkIn = checkIn.textContent;
+      let chkOut = checkOut.textContent;
+      let chkInDay = chkIn.replace("년 ", "-").replace("월 ", "-").replace("일", "");
+      let chkOutDay = chkOut.replace("년 ", "-").replace("월 ", "-").replace("일", "");
+      let calcDay = getDateDiff(chkOutDay, chkInDay);
+      let dayPrice = this.nextSibling.childNodes[1].childNodes[1].textContent;
+      let total = `${calcDay * dayPrice} 원`;
+      // let total = `${calcDay * dayPrice}`;
+      totalAmount.innerText = total;
+
+
+//       const price = "total"; // <- String Type
+// // const price = total; // <- String Type
+// const format = Number(price).toLocaleString();
+// console.log(format);
+    });
   },
   error: function (xhr) {
     console.log(xhr.status + "/" + xhr.errorText);
   }
 });
 
+//💛 날짜차이 구하기
+const getDateDiff = (d1, d2) => {
+  const date1 = new Date(d1);
+  const date2 = new Date(d2);
+  const diffDate = date1.getTime() - date2.getTime();
+  return Math.abs(diffDate / (1000 * 60 * 60 * 24)); // 밀리세컨 * 초 * 분 * 시 = 일
+};
 
-//💛가격
-// if(today.getDay() % 6 == 0){
-  //   $(".weekPrice").addClass("wp")
-  // }
-  if(today.getDay(newDIV) % 6 == 0){
-      $(".weekPrice").addClass("wp")
-    }
+//콤마 표시
+const price = "total"; // <- String Type
+// const price = total; // <- String Type
+const format = Number(price).toLocaleString();
+console.log(format);
 
-$("button").on("click",function(){
-  if(newDIV.getDay() % 6 == 0){
-    $(".weekPrice").addClass("wp")
-  }
 
-})
+
+
+
+
+
+
 
