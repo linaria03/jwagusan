@@ -97,9 +97,10 @@ function choiceDate(newDIV) {
   if (document.getElementsByClassName("choiceDay")[1]) {
     // console.log(choiceDay.length);// 초기화 될때
     choiceDay.forEach((element) => {
-      element.classList.remove('choiceDay');            //선택된 날짜 일괄 삭제
-      // $('checkIn').remove;
-      // element.remove('chkDay');
+      element.classList.remove('choiceDay');           //선택된 날짜 일괄 삭제
+      checkIn.textContent = '숙박 시작일 선택'
+      checkOut.textContent = '숙박 종료일 선택'
+      totalAmount.textContent = '숙소를 선택해주세요'
     });
   }
   else if (document.getElementsByClassName("choiceDay")[0]) {
@@ -152,7 +153,16 @@ $.ajax({
       elem += `<div class="detail">`;
       elem += `<p>${this.name}</p>`;
       elem += `<p>${this.people}</p>`;
-      elem += `<p>${this.option}</p>`;
+      elem += `<div class="option">${this.option}
+      <span class="material-symbols-outlined">
+      tv</span><span class="material-symbols-outlined">
+      kitchen</span><span class="material-symbols-outlined">
+      cooking</span><span class="material-symbols-outlined">
+      soup_kitchen</span><span class="material-symbols-outlined">
+      multicooker</span><span class="material-symbols-outlined">
+      outdoor_grill</span><span class="material-symbols-outlined">
+      wc</span>
+      </div>`;
       elem += `<p>입/퇴실시간 : ${this.time}</p>`;
       elem += `<button>${this.button}</button>`;
       elem += `<div class="price">가격 : 
@@ -171,21 +181,26 @@ $.ajax({
       let chkOutDay = chkOut.replace("년 ", "-").replace("월 ", "-").replace("일", "");
       let calcDay = getDateDiff(chkOutDay, chkInDay);
       let dayPrice = this.nextSibling.childNodes[1].childNodes[1].textContent;
-      let total = `${calcDay * dayPrice} 원`;
+      let total = `${calcDay * dayPrice}원`;
       // let total = `${calcDay * dayPrice}`;
-      totalAmount.innerText = total;
-
-
-//       const price = "total"; // <- String Type
-// // const price = total; // <- String Type
-// const format = Number(price).toLocaleString();
-// console.log(format);
+      // let total = `${calcDay * dayPrice}`;
+      totalAmount.innerText = numberWithCommas(total);
+      
+      
+      
+      //       const price = "total"; // <- String Type
+      // // const price = total; // <- String Type
+      // const format = Number(price).toLocaleString();
+      // console.log(format);
     });
   },
   error: function (xhr) {
     console.log(xhr.status + "/" + xhr.errorText);
   }
 });
+function numberWithCommas(total) {
+  return total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");  
+}
 
 //💛 날짜차이 구하기
 const getDateDiff = (d1, d2) => {
@@ -196,10 +211,18 @@ const getDateDiff = (d1, d2) => {
 };
 
 //콤마 표시
-const price = "total"; // <- String Type
-// const price = total; // <- String Type
-const format = Number(price).toLocaleString();
-console.log(format);
+// function numberWithCommas(total) {
+//   return total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+// }
+// console.log(numberWithCommas(total))
+
+
+
+
+//       const price = "total"; // <- String Type
+// // const price = total; // <- String Type
+// const format = Number(price).toLocaleString();
+// console.log(format);
 
 
 
