@@ -1,19 +1,26 @@
 // 💛nav탭
-$(".tabButton").hover(function () {
-  $(this).toggleClass("on").children('.tabBox').stop(true).slideToggle(300);
-  $(".tabButton").not(this).removeClass('on').stop(true).children('.tabBox').slideUp(300);
-  // return false;
+$(function () {
+  // 메뉴클릭시 하위메뉴 슬라이드 다운
+  // 하위메뉴가 열린상태에서 다른메뉴 클릭시 변경, 자기메뉴 클릭시 슬라이드 업
+  $(".headerMenu").click(function () {
+    $('.gnb, .gnb .inner, .subTitle').removeClass('on all');
+    if ($(this).hasClass('on')) {
+      $(this).removeClass('on');
+      $("nav").removeClass('on').children().removeClass('on');
+    } else {
+      $("nav").addClass('on');
+      $(this).addClass('on').siblings().removeClass('on');
+      $("#" + $(this).data('id')).addClass('on').siblings().removeClass('on');
+    }
+  });
 });
 
 
-// 💛전체메뉴
+//💛 전체메뉴
+$(".ham").click(function () {
+  $(".gnb, .gnb .inner").toggleClass('all');
+  $(".subTitle").toggleClass('on');
 
-  $(".menu").click(function() {
-    $(".gnb").toggleClass("all");
-    $(".tabBox").slideToggle();
-    $(this).text(function(e, text) {
-        return text === 'close' ? 'menu' : 'close'
-    });
 });
 
 
@@ -67,7 +74,7 @@ $(".eventHeader button").click(function () {
   $(this).addClass('on').siblings().removeClass('on');
   $(".eventDate").eq(tabindex).addClass('on').siblings().removeClass('on');
 });
-$(".eventHeader button").eq(0).trigger('click')
+$(".eventHeader button").eq(0).trigger('click');
 
 // 💛여행정보 슬라이드
 // var tripSwiper = new Swiper(".tripSwiper", {

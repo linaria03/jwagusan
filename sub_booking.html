@@ -22,106 +22,124 @@
         <div class="inner">
             <div class="top">
                 <!-- top메뉴 -->
-                <a href="https://www.foresttrip.go.kr/main.do" class="logo" target="_blank">숲나들이</a>
                 <div>
                     <a href="#">로그인</a>
                     <a href="#">회원가입</a>
                     <a href="#">고객센터</a>
                     <a href="#">Language</a>
+                    <a href="https://www.foresttrip.go.kr/main.do" class="logo" target="_blank">숲나들e</a>
                 </div>
             </div>
-            <nav class="inner">
-                <!-- nav -->
-                <a href="/index.html" target="_top">
-                    <h3>좌구산자연휴양림</h3>
-                </a>
-                <!-- <div class="nav">
-                    <ul class="gnb">
-                        <li class="tabButton ">
-                            <a href="#">온라인예약</a>
-                            <ul class="tabBox ">
-                                <li>시설예약</li>
-                                <li>프로그램예약</li>
-                                <li>부대시설예약</li>
-                                <li>우선예약
-                                    <ul>
-                                        <li>산림복지바우처우선예약</li>
-                                        <li>지역주민우선예약</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="tabButton">
-                            <a href="#">산림휴양시설</a>
-                            <ul class="tabBox">
-                                <li>자연휴양림안내</li>
-                                <li>시설물안내
-                                    <ul>
-                                        <li>숙박시설</li>
-                                        <li>야영장</li>
-                                        <li>부대시설</li>
-                                    </ul>
-                                </li>
-                                <li>프로그램</li>
-                                <li>행사/이벤트</li>
-                                <li>숲갤러리</li>
-                                <li>영상갤러리</li>
-                                <li>오시는길</li>
-                            </ul>
-                        </li>
-                        <li class="tabButton">
-                            <a href="#">여행정보</a>
-                            <ul class="tabBox">
-                                <li>여행정보</li>
-                            </ul>
-                        </li>
-                        <li class="tabButton">
-                            <a href="#">이용안내</a>
-                            <ul class="tabBox">
-                                <li>예약안내
-                                    <ul>
-                                        <li>선착순예약정책</li>
-                                        <li>지역주민우선예약정책</li>
-                                    </ul>
-                                </li>
-                                <li>시설이용안내
-                                    <ul>
-                                        <li>자주하는질문</li>
-                                        <li>할인정책</li>
-                                        <li>위약금정책</li>
-                                        <li>이용요금</li>
-                                        <li>결제관련</li>
-                                        <li>이용객준수사항</li>
-                                    </ul>
-                                </li>
-                                <li>예약약관
-                                    <ul>
-                                        <li>예약약관</li>
-                                        <li>조례</li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li class="tabButton">
-                            <a href="#">참여마당</a>
-                            <ul class="tabBox">
-                                <li>공지사항</li>
-                                <li>1대1문의</li>
-                                <li>이용후기</li>
-                                <li>자유게시판</li>
-                                <li>설문조사</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div> -->
-                <div>
-                    <button>마이<br>페이지</button>
-                    <button>
-                        <span class="material-symbols-outlined menu">
-                            menu
-                        </span>
-                    </button>
+            <div class="header">
+                <div class="title">좌구산자연휴양림</div>
+                <div class="firstMenu">
+                    <div class="headerMenu" data-id="menu1">온라인예약</div>
+                    <div class="headerMenu" data-id="menu2">산림휴양시설</div>
+                    <div class="headerMenu" data-id="menu3">여행정보</div>
+                    <div class="headerMenu" data-id="menu4">이용안내</div>
+                    <div class="headerMenu" data-id="menu5">참여마당</div>
+                </div>
+                <div class="icon">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span>
+                        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                            onclick="this.classList.toggle('active')">
+                            <path class="line top"
+                                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                            <path class="line middle" d="m 30,50 h 40" />
+                            <path class="line bottom"
+                                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <nav class="gnb">
+                <div class="inner">
+                    <div class="subTitle" id="menu1">
+                        <div class="subTitlebox">
+                            <img src="/images/온라인예약-깃발.png" alt>
+                        </div>
+                        <ul class="secMenu">
+                            <li>시설예약</li>
+                            <li>프로그램예약</li>
+                            <li>부대시설예약</li>
+                            <li>우선예약
+                                <ul class="thdMenu material-symbols-outlined">
+                                    <li>산림복지바우처우선예약</li>
+                                    <li>지역주민우선예약</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subTitle" id="menu2">
+                        <div class="subTitlebox">
+                            <img src="/images/산림휴양시설-표지판.png" alt>
+                        </div>
+                        <ul class="secMenu">
+                            <li>자연휴양림안내</li>
+                            <li>시설물안내
+                                <ul class="thdMenu material-symbols-outlined">
+                                    <li>숙박시설</li>
+                                    <li>야영장</li>
+                                    <li>부대시설</li>
+                                </ul>
+                            </li>
+                            <li>프로그램</li>
+                            <li>행사/이벤트</li>
+                            <li>숲갤러리</li>
+                            <li>영상갤러리</li>
+                            <li>오시는길</li>
+                        </ul>
+                    </div>
+                    <div class="subTitle" id="menu3">
+                        <div class="subTitlebox">
+                            <img src="/images/여행정보-표지판.png" alt>
+                        </div>
+                        <ul class="secMenu">
+                            <li>여행정보</li>
+                        </ul>
+                    </div>
+                    <div class="subTitle" id="menu4">
+                        <div class="subTitlebox">
+                            <img src="/images/이용안내-표지판.png" alt>
+                        </div>
+                        <ul class="secMenu">
+                            <li>예약안내
+                                <ul class="thdMenu material-symbols-outlined">
+                                    <li>선착순예약정책</li>
+                                    <li>지역주민우선예약정책</li>
+                                </ul>
+                            </li>
+                            <li>시설이용안내
+                                <ul class="thdMenu material-symbols-outlined">
+                                    <li>자주하는질문</li>
+                                    <li>할인정책</li>
+                                    <li>위약금정책</li>
+                                    <li>이용요금</li>
+                                    <li>결제관련</li>
+                                    <li>이용객준수사항</li>
+                                </ul>
+                            </li>
+                            <li>예약약관
+                                <ul class="thdMenu material-symbols-outlined">
+                                    <li>예약약관</li>
+                                    <li>조례</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subTitle" id="menu5">
+                        <div class="subTitlebox">
+                            <img src="/images/참여마당-표지판.png" alt>
+                        </div>
+                        <ul class="secMenu">
+                            <li>공지사항</li>
+                            <li>1대1문의</li>
+                            <li>이용후기</li>
+                            <li>자유게시판</li>
+                            <li>설문조사</li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
