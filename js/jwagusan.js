@@ -23,6 +23,16 @@ $(".ham").click(function () {
 
 });
 
+//💛 T전체메뉴
+$(function(){
+  $(".headerTmenu").click(function (e) {
+      $(this).addClass('active').next().stop().slideToggle(300);
+      $(".headerTmenu").not(this).removeClass('active').next().slideUp(300);
+      e.preventDefault();
+      e.stopPropagation();
+  });
+})
+
 
 
 // 💛main슬라이드

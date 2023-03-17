@@ -6,19 +6,64 @@
     width: 100%;
     /* padding: 10px; */
     /* margin: unset; */
+    /* height: 100vh; */
 }
+
 /* nav */
-.nav .gnb{
+nav{
+    background: #fff;
+}
+.firstMenu{
     display: none;
 }
-nav div:last-child > button:first-child{
+.headerTmenu{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    /* color: #79A637; */
+    padding: 10px;
+}
+.material-symbols-outlined{
+    font-size: 2.5rem;
+}
+.line{
+    stroke-width: 3.5;
+}
+nav .inner .subTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+    background: #A7D9D0;
+    text-align: center;
+    /* align-items: center; */
+    overflow: hidden;
+}
+.subTitlebox{
     display: none;
 }
+.secMenu{
+    font-size: 1rem;
+    gap: 17px;
+    background: #F2F0E4;
+    padding: 10px;
+}
+.thdMenu{
+    display: flex;
+    flex-direction: column;
+}
+.inner.all{
+    justify-content: flex-start;
+}
+
 /* sec1 */
 .sec1 .mainSwiper{
     padding-top: 0;
     height: 411px;
 }
+
 /* sec2 공지사항 */
 .sec2 .left{
     width: 50%;
@@ -58,6 +103,7 @@ nav div:last-child > button:first-child{
 .eventDate p {
     font-size: 0.56rem;
 }
+
 /*sec2 right 프로그램소개 */
 .sec2 .right{
     width: 50%;
@@ -83,6 +129,7 @@ nav div:last-child > button:first-child{
 .swiper-wrapper .swiper-slide{
     font-size: 0.75rem;
 }
+
 /* sec3 찾아오시는길 */
 .sec3 .left{
     width: 50%;
@@ -101,6 +148,7 @@ nav div:last-child > button:first-child{
     /* padding: 0 0 0 9.06rem; */
     display: none;
 }
+
 /* sec3 여행정보 */
 .sec3 .right{
     width: 50%;
@@ -136,6 +184,7 @@ nav div:last-child > button:first-child{
 .sec3 .right p{
     font-size: 1rem;
 }
+
 /* footer */
 footer .inner{
     gap: 20px;
