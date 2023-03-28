@@ -112,7 +112,7 @@ nav .inner .subTitle{
 
 .sec2 .right > h2{
     font-size: 1.6rem;
-    background: url(/ex/images/프로그램소개-icon.png) no-repeat 0 50% / 35px 35px;
+    background: url(/jwagusan/images/프로그램소개-icon.png) no-repeat 0 50% / 35px 35px;
     padding: 10px 0px 5px 50px;
 }
 .sec2 .right .swiper-slide img{
@@ -135,7 +135,7 @@ nav .inner .subTitle{
     width: 50%;
 }
 .sec3 .left h2{
-    background: url(/ex/images/map-icon.png) no-repeat 0 0 / 32px 32px;
+    background: url(/jwagusan/images/map-icon.png) no-repeat 0 0 / 32px 32px;
     font-size: 1.6rem;
     padding: 3px 5px 6px 41px;
 }
@@ -156,7 +156,7 @@ nav .inner .subTitle{
     align-items: flex-start;
 }
 .sec3 .right h2{
-    background: url(/ex/images/여행정보-icon.png) no-repeat 0 50% / 30px 30px;
+    background: url(/jwagusan/images/여행정보-icon.png) no-repeat 0 50% / 30px 30px;
     font-size: 1.6rem;
     padding: 5px 139px 9px 38px;
     /* gap:80px */
