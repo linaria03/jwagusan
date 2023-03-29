@@ -35,6 +35,7 @@ header {
 }
 /* top메뉴 css */
 header .inner .top {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
