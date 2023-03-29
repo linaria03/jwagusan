@@ -57,6 +57,9 @@ nav .inner .subTitle{
 .inner.all{
     justify-content: flex-start;
 }
+nav.all .inner.all .subTitle.on{
+    width: 100%;
+}
 
 /* sec1 */
 .sec1 .mainSwiper{
