@@ -17,6 +17,7 @@ nav{
     display: none;
 }
 .headerTmenu{
+    width: 100%;
     display: flex;
     justify-content: center;
     font-weight: bold;
