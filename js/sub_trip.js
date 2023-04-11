@@ -37,7 +37,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
 var positions = [
     {
         content: `
-        <img src="/images/좌구산천문대.jpg">
+        <img src="/jwagusan/images/좌구산천문대.jpg">
         <h2>좌구산천문대</h2>
         <ul class="content">
             <li>국내에서 가장 큰 365mm 굴절망원경이 설치되어 천체들의 생생한 모습을 직접 볼 수 있습니다.<br> 날씨와 상관없이 다양한 천문 우주컨텐츠를 관람 할 수 있고, 다양한 전시도 체험할 수 있습니다.</li>
@@ -51,7 +51,7 @@ var positions = [
     },
     {
         content: `
-        <img src="/images/좌구산구름다리.jpg">
+        <img src="/jwagusan/images/좌구산구름다리.jpg">
         <h2>좌구산명상구름다리</h2>
         <ul class="content">
             <li>좌구산 휴양랜드의 랜드마크 명상구름다리 명상구름다리는 230m길이의 흔들다리입니다.
@@ -62,7 +62,7 @@ var positions = [
     },
     {
         content: `
-        <img src="/images/거북이바위정원.jpg">
+        <img src="/jwagusan/images/거북이바위정원.jpg">
         <h2>거북이바위정원</h2>
         <ul class="content">
             <li>별주부전을 테마로 한듯 구성된 공원!</li>
@@ -72,7 +72,7 @@ var positions = [
     },
     {
         content: `
-        <img src="/images/자전거공원.jpg">
+        <img src="/jwagusan/images/자전거공원.jpg">
         <h2>증평자전거공원</h2>
         <ul class="content">
             <li>증평읍 남하용강로 16에 증평자전거공원과 어린이자전거교토안전교육장이 있습니다.</li>
@@ -82,7 +82,7 @@ var positions = [
     },
     {
       content: `
-      <img src="/images/김득신문화관.jpg">
+      <img src="/jwagusan/images/김득신문화관.jpg">
       <h2>김득신문화관</h2>
       <ul class="content">
           <li>증평의 위인!<br>독서인들의 귀감이 되는 김득신을 기리는 문학관
@@ -96,7 +96,7 @@ var positions = [
   },
   {
     content: `
-    <img src="/images/보강천.jpg">
+    <img src="/jwagusan/images/보강천.jpg">
     <h2>보강천미루나무숲</h2>
     <ul class="content">
         <li>보강천변에 숲이 조성이 되어있고, 답답한 삶에 여유를 줄만한 곳입니다.
@@ -107,7 +107,7 @@ var positions = [
 },
 {
   content: `
-  <img src="/images/오일장.jpg">
+  <img src="/jwagusan/images/오일장.jpg">
   <h2>장뜰시장 오일장</h2>
   <ul class="content">
       <li>여행에 빠질수 없는 먹거리!<br>1일, 6일에만 만날 수 있는 오일장 싱싱하고 저렴한 농수산식품과 맛있는 먹거리를 즐길 수 있어요.
@@ -118,7 +118,7 @@ var positions = [
 },
 {
   content: `
-  <img src="/images/연암지질생태공원.jpg">
+  <img src="/jwagusan/images/연암지질생태공원.jpg">
   <h2>연암지질생태공원</h2>
   <ul class="content">
       <li>괴정저수지 주변 테마가 있는 공원 다양한 지질관찰과 출렁다리 그리고 전망대까지!
@@ -129,7 +129,7 @@ var positions = [
 },
 {
   content: `
-  <img src="/images/벨포레.jpg">
+  <img src="/jwagusan/images/벨포레.jpg">
   <h2>벨포레</h2>
   <ul class="content">
       <li>모두가 즐길 수 있는 레저단지!<br>주요 시설로는 골프장,루지,동물체험목장 등이 있습니다.
